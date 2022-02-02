@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>main page</title>
+</head>
+<body>
+    <div class="side-bar-chats">
+        {{ range .chats }}
+        <div class="side-bar-chat">
+            <h4>{{ .Name }}</h4>
+            <h5>{{ .ChatType }}</h5>
+        </div>
+        {{ end }}
+    </div>
+    
+</body>
+</html>
